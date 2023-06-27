@@ -358,6 +358,31 @@ a:hover {
 }
 
 
+/* Download button */
+
+.download {
+    position: fixed;
+    display: none;
+    background: #0078ff;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 70px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+
+.download i {
+    padding-top: 12px;
+    color: #fff;
+}
+
+
 /* Prelaoder */
 
 #preloader {
@@ -1343,6 +1368,12 @@ footer .credits a {
 
 @media (max-width: 768px) {
     .back-to-top {
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .download {
         bottom: 15px;
     }
 }

@@ -31,6 +31,31 @@
         return false;
     });
 
+
+    // Download button
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('.download').fadeIn('slow');
+        } else {
+            $('.download').fadeOut('slow');
+        }
+    });
+    $('.download').click(function() {
+        var fileUrl = 'public/Kevin-Portfolio.pdf'; // URL file yang ingin diunduh
+        var fileName = 'Kevin-Portfolio'; // Nama file yang ingin diberikan pada file yang diunduh
+
+        var element = document.createElement('a');
+        element.setAttribute('href', fileUrl);
+        element.setAttribute('download', fileName);
+        element.style.display = 'none';
+
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+
+        return false;
+    });
+
     /*--/ Star ScrollTop /--*/
     $('.scrolltop-mf').on("click", function() {
         $('html, body').animate({
