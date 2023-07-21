@@ -41,7 +41,7 @@
         }
     });
     $('.download').click(function() {
-        var fileUrl = 'public/Kevin-Portfolio.pdf'; // URL file yang ingin diunduh
+        var fileUrl = 'public/Portfolioku.pdf'; // URL file yang ingin diunduh
         var fileName = 'Kevin-Portfolio'; // Nama file yang ingin diberikan pada file yang diunduh
 
         var element = document.createElement('a');
