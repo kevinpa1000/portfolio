@@ -724,6 +724,11 @@ a:hover {
     margin-left: 10px;
 }
 
+.about-img {
+    box-shadow: rgba(0, 0, 0, 0.4);
+    border-color: #4e4e4e;
+}
+
 .skill-mf span {
     color: #4e4e4e;
 }
