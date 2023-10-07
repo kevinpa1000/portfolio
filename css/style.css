@@ -564,26 +564,7 @@ a:hover {
 }
 
 
-/* 3d TEXT */
-
-
-/* #td {
-    text-transform: uppercase;
-    font-weight: bold;
-    position: relative;
-    animation: spin 4s linear infinite;
-    transform-style: preserve-3d;
-    text-align: center;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotateX(0deg) rotateY(0deg);
-    }
-    100% {
-        transform: rotateX(360deg) rotateY(360deg);
-    }
-} */
+/* 3D Text */
 
 #td {
     text-transform: uppercase;
