@@ -437,6 +437,25 @@ a:hover {
 //--//-->   NAVBAR
 ======================================*/
 
+
+/* Language */
+
+.language #lng {
+    position: fixed;
+    width: 28px;
+    height: 28px;
+    border-radius: 360px;
+    border-color: #1a1a1b;
+    border-style: solid;
+    justify-content: center;
+}
+
+.language {
+    /* background-color: #0078ff; */
+    width: 71px;
+    height: 30px;
+}
+
 .navbar-b {
     transition: all .5s ease-in-out;
     background-color: transparent;
@@ -544,10 +563,49 @@ a:hover {
     background-color: #1B1B1B;
 }
 
+
+/* 3d TEXT */
+
+
+/* #td {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    animation: spin 4s linear infinite;
+    transform-style: preserve-3d;
+    text-align: center;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+} */
+
+#td {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    animation: spin 3s linear infinite, moveLeft 4s linear 4s alternate;
+    transform-style: preserve-3d;
+}
+
+@keyframes spin {
+    1000% {
+        transform: rotateY(360deg) rotateY(360deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
 .navbar-b .navbar-brand {
     color: #fff;
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 18px;
+    /* font-weight: 10; */
 }
 
 .navbar-b .navbar-nav .dropdown-item.show .dropdown-menu,
@@ -1028,11 +1086,12 @@ p {
     display: inline-block;
 }
 
-.card-blog .post-date {
+
+/* .card-blog .post-date {
     color: #4e4e4e;
     display: inline-block;
     float: right;
-}
+} */
 
 
 /*======================================
