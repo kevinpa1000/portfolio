@@ -9,6 +9,10 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+      </svg> -->
+
     <!-- Favicons -->
     <link href="img/kvn.jpg" rel="icon">
     <link href="img/kvn.jpg" rel="ss">
@@ -48,12 +52,50 @@
     <!--/ Nav Star /-->
     <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
         <div class="container">
+            <img class="p-3px" src="img/team1.jpg" alt="image not available" style="width: 50px; height:50px; border-radius:360px">
+
             <a class="navbar-brand js-scroll" href="#page-top">Kevin | Portfolio</a>
+            <i class="fa-solid fa-earth-americas"></i>
+
+            <select id="languageSelect">
+                <!-- <i class="bi bi-globe-americas"></i> -->
+                <option value="es">IDN</option>
+                <option value="en">ENG</option>
+                <!-- <option value="fr">French</option>
+                <option value="de">German</option> -->
+            </select>
+            <script>
+                // Get a reference to the select element
+                const languageSelect = document.getElementById('languageSelect');
+                // Get a reference to the output div
+                const outputDiv = document.getElementById('output');
+
+                // Define language translations
+                const translations = {
+                    en: 'This is some sample text in English.',
+                    es: 'Este es un texto de ejemplo en español.',
+                    fr: 'Il s\'agit d\'un texte d\'exemple en français.',
+                    de: 'Dies ist ein Beispielsatz in Deutsch.'
+                };
+
+                // Function to update the displayed text based on the selected language
+                function updateText() {
+                    const selectedLanguage = languageSelect.value;
+                    const translatedText = translations[selectedLanguage];
+                    outputDiv.textContent = translatedText;
+                }
+
+                // Add an event listener to the select element to update the text when the selection changes
+                languageSelect.addEventListener('change', updateText);
+
+                // Initial text update
+                updateText();
+            </script>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -213,7 +255,7 @@
                                         </h5>
                                     </div>
                                     <p class="lead">
-                                        Halo, Nama saya Kevin Kantona Pasaribu. Saya seorang fresh graduate IT dengan gelar sarjana ilmu komputer jurusan informatika yang tertarik dengan Teknologi Informasi dan Programming serta perkembangan teknologi terkini, khususnya di bidang kecerdasan
+                                        Halo, Nama saya Kevin Kantona Pasaribu. Saya seorang fresh graduate IT dengan gelar Sarjana Komputer (S.Kom), jurusan informatika yang tertarik dengan Teknologi Informasi dan Programming serta perkembangan teknologi terkini, khususnya di bidang kecerdasan
                                         buatan. Saya sangat antusias untuk memulai karir saya di dunia teknologi.
                                     </p>
                                     <p class="lead">
@@ -251,31 +293,27 @@
                                     <hr className='w-75 mx-auto' />
                                     <p class="lead">
                                         Saya magang di BNI sebagai UI/UX Developer selama 6 bulan, yang bertanggung jawab untuk mengerjakan tugas yang diberikan oleh mentor saya dalam membuat dan merancang design Mock-Up sampai ke pembuatan Prototype, dan juga membuat Wirefrime dan Userflow
-                                        untuk produk digital BNI yaitu fitur Hybrid Working dan COP atau Car Owner Program dan fitur lainnya berupa HC (Human Service) yang ditanamkan pada aplikasi digiHC BNI.
+                                        untuk produk digital BNI yaitu fitur Hybrid Working dan COP atau Car Owner Program dan fitur lainnya berbasis HC (Human Service) yang ditanamkan pada aplikasi digiHC BNI.
                                     </p>
                                     <p class="lead">
-                                        Aplikasi tersebut digunakan pegawai untuk mengelola data absensi dan tahapan pencapaian pegawai selama bekerja. Dalam Pengerjaan nya saya menggunakan aplikasi Figma, Photoshop dan Produk dari Microsoft seperti Word, Power Point dan Excel.
+                                        Aplikasi tersebut digunakan pegawai untuk mengelola data absensi dan tahapan serta status pencapaian pegawai selama bekerja. Dalam Pengerjaan nya saya menggunakan aplikasi Figma, Photoshop dan Microsoft Office.
                                     </p>
                                     <p class="lead">
-                                        Selain itu saya juga ditugasin untuk mengelola data dan membuat visualisai data menggunakan aplikasi dari BNI yaitu BNI Smarter dan Microsoft Excel serta membuat laporan mingguan dari hasil proses yang dikerjakan.
+                                        Selain itu saya juga ditugasin untuk mengelola data dan membuat visualisai data menggunakan aplikasi dari BNI yaitu BNI Smarter dan Microsoft Excel serta membuat laporan mingguan dan bulanan dari hasil proses projek yang sedang dikerjakan.
                                     </p>
                                     <h6 class="mt-4">Detail tugas yang saya kerjakan:</h6>
                                     <ul>
                                         <li><a>Menganalisis dan memahami kebutuhan dan keinginan user dalam mengembangkan produk digital.</a></li>
                                     </ul>
                                     <ul>
-                                        <li><a>Merancang Hybrid WorkingMock-UP dan membatalkan cuti yang akan digunakan di BNI digiHC
-                                        aplikasi.</a></li>
+                                        <li><a>Merancang tampilan menu Hybrid Working dan Pemtabalan Cuti yang akan di tanamkan di aplikasi digiHC BNI.</a></li>
                                     </ul>
                                     <ul>
-                                        <li><a>Mengelola data karyawan.</a></li>
+                                        <li><a>Membuat Wirefrime, User Flow, Flowchart dan Mock-Up pada menu aplikasi HC (Human Service)
+                                    untuk keperluan presentasi meeting dengan User.</a></li>
                                     </ul>
                                     <ul>
-                                        <li><a>Membuat Wirefrime, User Flow, Flowchart dan Mock-Up pada aplikasi HC (Human Service)
-                                    bagi karyawan untuk mengelola data.</a></li>
-                                    </ul>
-                                    <ul>
-                                        <li><a>Melakukan penelitian aplikasi HC untuk perusahaan.</a></li>
+                                        <li><a>Mengumpulkan informasi serta melakukan riset pada aplikasi HC untuk untuk keperluan data dalam pembuatan projek yang sedang dikerjakan.</a></li>
                                     </ul>
                                     <ul>
                                         <li><a>Mengelola dan memvisualisasikan data perusahaan.</a></li>
@@ -284,10 +322,10 @@
                                         <li><a>Merancang UI/UX dan membuat prototype pada aplikasi BNI HC.</a></li>
                                     </ul>
                                     <ul>
-                                        <li><a>Membuat laporan status kemajuan project atau tugas yang diberikan.</a></li>
+                                        <li><a>Membuat status report hasil project atau tugas yang telah dikerjakan.</a></li>
                                     </ul>
                                     <ul>
-                                        <li><a>Membuat catatan dari riwayat user untuk panduan dalam mengembangkan desain produk.</a></li>
+                                        <li><a>Membuat report dari riwayat serta usulan user untuk panduan dalam mengembangkan desain produk pada aplikasi yang dikerjakan.</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -937,6 +975,8 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/typed/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
 
 
