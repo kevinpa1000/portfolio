@@ -570,7 +570,7 @@ a:hover {
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
-    animation: spin 3s linear infinite, moveLeft 4s linear 4s alternate;
+    /* animation: spin 3s linear infinite, moveLeft 4s linear 4s alternate; */
     transform-style: preserve-3d;
 }
 
